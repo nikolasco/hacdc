@@ -1,0 +1,18 @@
+There are three scripts in this directory. The main one is "doorman.rb".
+It fetches the current status, loads its previous state, and looks to see
+if there's a difference (open->closed, closed->open). If so, it posts a status
+update to Twitter.
+
+doorman.sh is a small shell script wrapper that changes directories and manages
+a log file.
+
+doorman_auth.rb is used for getting a set of credentials from Twitter.
+Start by registering an application with Twitter or retrieving details for an
+existing app.
+  https://twitter.com/oauth_clients
+Then creating a doorman.creds file containting the following:
+  {"conumer_key": "<from twitter>", "consumer_secret": "<from twitter>"}
+Now you're ready to run doorman_auth.rb . It will give you a URL to go to,
+which you should use in a browser where you're logged in as the user you want
+doorman.rb to post as. It will wait for you to get a PIN from Twitter, then
+spit out a new set of credentials (clean out doorman.creds and paste in the new)
