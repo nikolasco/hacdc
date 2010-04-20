@@ -11,8 +11,8 @@ CREDS_FILE_NAME = 'doorman.creds'
 STATUS_URL = 'http://hacdc.org/sites/default/files/last_occsensor.txt'
 
 STATUS_STRINGS ={
-  false => 'HacDC is currently closed.',
-  true => 'HacDC is currently open.'}
+  false => 'HacDC is currently closed',
+  true => 'HacDC is currently open'}
 TIME_FORMAT = ' (as of %a, %b %d at %r )'
 
 class Status
