@@ -1,3 +1,5 @@
 doorman.creds
 doorman.state
 doorman.state.lock
+doorman.log
+doorman.log.new
